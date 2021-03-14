@@ -5,7 +5,7 @@ const Layout = (props) => {
   return (
     <Aux>
       <div>Toolbar, SideDrawer, Backdrop</div>
-      <main className={classes.Content}>
+      <main className={classes.Content} onClick={props.clicked}>
         {props.children}
       </main>
     </Aux>
